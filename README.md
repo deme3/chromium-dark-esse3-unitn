@@ -1,5 +1,7 @@
 # chromium-dark-esse3-unitn
 
+**Pending review for both Chrome Web Store and Mozilla Firefox.**
+
 A Chromium extension to inject dark mode into UniTrento's career management system (Esse3), specifically designed for UniTN branding and enhanced. Developed and tested under Mozilla Firefox 112.0.1.
 
 ## Installation
