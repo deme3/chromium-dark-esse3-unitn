@@ -1,8 +1,8 @@
 {
   "name": "Esse3 Dark+ Mode for UniTN",
   "version": "1.0.0.0",
-  "manifest_version": 2,
-  "description": "A Chromium extension to inject dark mode into UniTrento's career management system (Esse3), specifically designed for UniTN branding and enhanced.",
+  "manifest_version": 3,
+  "description": "A Chromium extension to inject dark mode into Esse3 (UniTrento), specifically designed for UniTN branding and enhanced.",
   "icons": {
     "128": "icons/unitn128x128v2.png"
   },
@@ -82,7 +82,14 @@
     }
   ],
   "web_accessible_resources": [
-    "content-scripts/img/logo_unitn_it.png",
-    "content-scripts/img/logo_unitn_en.png"
-  ]
+    {
+      "resources": ["content-scripts/img/*"],
+      "matches": ["https://esse3.unitn.it/*", "https://www.esse3.unitn.it/*"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "chromium-dark-esse3-unitn@deme3.github.io"
+    }
+  }
 }
