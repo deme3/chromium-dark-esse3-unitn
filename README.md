@@ -10,7 +10,9 @@ Firefox users have to install it manually by downloading the latest release from
 
 ## Screenshots
 
-TO-DO
+![Guest homepage](./screenshots/guest.png)
+![Student homepage](./screenshots/main.png)
+![Student homepage with sidebar](./screenshots/main-sidebar.png)
 
 ## Manual Installation
 
