@@ -1,0 +1,22 @@
+#certificati-listaCert-listaCertificati ul li {
+  font-size: 0;
+  line-height: 0;
+}
+
+#certificati-listaCert-listaCertificati ul li a {
+  display: block;
+  background-color: var(--upper-bg);
+  border: 1px solid var(--upper-bg-darker);
+  border-radius: var(--border-radius);
+  box-shadow: 1px 1px 10px #00000080;
+  margin-bottom: 12px;
+  padding: 12px;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none !important;
+}
+
+#certificati-listaCert-listaCertificati ul li a:hover {
+  background-color: var(--upper-bg-darker);
+  border: 1px solid var(--upper-bg);
+}

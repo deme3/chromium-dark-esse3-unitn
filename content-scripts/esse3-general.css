@@ -1,0 +1,368 @@
+body {
+  --main-bg: #212121;
+  --upper-bg: #424242;
+  --upper-bg-darker: #353535;
+  --main-fg: #fff;
+  --unitn-red: #b10b25;
+  --unitn-red-darker: #8a0a1e;
+  /* green dark mode */
+  --legenda1: #2c4c3b;
+  /* grey dark mode */
+  --legenda2: #4b4b4b;
+  /* lightblue dark mode */
+  --legenda3: #224a5c;
+  --border-radius: 8px;
+  background-color: var(--main-bg) !important;
+  color: var(--main-fg) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--main-fg) !important;
+}
+
+.masthead {
+  background: var(--upper-bg) !important;
+}
+
+.masthead .masthead_hamburger {
+  color: var(--main-fg);
+}
+
+#theme-logo {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png"), url("moz-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png");
+  background-size: 80% auto;
+  background-position: left center;
+  background-repeat: no-repeat;
+  object-position: -999px 0px;
+}
+
+#esse3 .record,
+#esse3 .record#gestioneUtente-boxInfoStudente {
+  background-color: var(--upper-bg) !important;
+  border-left: none !important;
+  border-right: none !important;
+  padding: 0;
+  border-radius: var(--border-radius);
+  border-bottom: 5px solid var(--upper-bg-darker) !important;
+}
+
+#esse3 .record-h2 {
+  background-color: transparent !important;
+  top: 0 !important;
+  position: static !important;
+  color: var(--main-fg) !important;
+  margin: 12px 12px 0 12px !important;
+  padding: 0;
+}
+
+#esse3 dl.record-riga dt:first-child,
+#esse3 dl.record-riga dt:first-child + dd {
+  border-top: 0;
+  margin-top: 1em;
+}
+
+#esse3 dl.record-riga dt:nth-last-child(2) {
+  border-radius: 0 0 0 8px;
+}
+
+#esse3 dl.record-riga dt:nth-last-child(2) + dd {
+  border-radius: 0 0 8px 0;
+}
+
+#esse3 dl.record-riga dt {
+  margin-left: 0 !important;
+}
+
+#esse3 dl.record-riga dd {
+  margin-right: 0 !important;
+}
+
+#esse3 dl.record-riga dd,
+#esse3 dl.record-riga dt {
+  color: var(--main-fg) !important;
+  border: none !important;
+  padding: 10px 12px !important;
+  width: 50% !important;
+}
+
+#esse3 dl.record-riga dt:nth-child(4n + 1),
+#esse3 dl.record-riga dt:nth-child(4n + 1) + dd {
+  background-color: var(--upper-bg-darker);
+}
+
+#esse3 #continizio, #esse3 #contrisultati, #esse3 #contfiltra {
+  background-color: var(--upper-bg-darker) !important;
+  border: none !important;
+  padding: 16px;
+  border-radius: var(--border-radius);
+  border-bottom: 5px solid var(--upper-bg-darker);
+}
+
+#esse3 .closablePanelTitle {
+  background-color: var(--upper-bg) !important;
+}
+
+#esse3 .closablePanelTitle a {
+  color: var(--main-fg) !important;
+}
+
+#esse3 .container-1 {
+  background-color: var(--upper-bg) !important;
+  border: none !important;
+  padding: 0;
+  border-radius: var(--border-radius);
+  border-bottom: 5px solid var(--upper-bg-darker);
+}
+
+#esse3 .ds-tplTitolo {
+  background-color: transparent !important;
+  color: var(--main-fg) !important;
+}
+
+#esse3 .box-2 ul {
+  background-color: var(--upper-bg) !important;
+}
+
+#esse3 .table-1 {
+  background-color: transparent !important;
+  border: 1px solid #ffffff40 !important;
+}
+
+#esse3 .table-1 thead tr th {
+  border-bottom: 2px solid var(--unitn-red-darker) !important;
+}
+
+#esse3 .table-1 th {
+  background-color: var(--upper-bg) !important;
+}
+
+#esse3 .table-1 td {
+  background-color: var(--upper-bg-darker);
+  border: 1px solid #ffffff40 !important;
+}
+
+#esse3 .table-1 td a {
+  color: #ffffff80;
+}
+
+#esse3 .table-1 td a:hover {
+  color: #ffffff;
+}
+
+#esse3 .table-1 img[src*="detail.jpg"] {
+  object-position: -300px;
+  background: var(--main-fg) !important;
+  mask-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/detail.png"), url("moz-extension://__MSG_@@extension_id__/content-scripts/img/detail.png");
+  mask-position: center center;
+  mask-size: 100%;
+}
+
+#esse3 .box-cfu {
+  background-color: var(--upper-bg-darker);
+  border: 1px solid #ffffff40 !important;
+}
+
+#esse3 div.alert-info {
+  background-color: #084d9847 !important;
+  color: var(--main-fg) !important;
+}
+
+#esse3 div.alert-error {
+  background-color: #bb000030 !important;
+}
+
+#esse3 div.alert-warning {
+  background-color: #ff810036 !important;
+  color: var(--main-fg) !important;
+}
+
+#esse3old .tplLegenda {
+  background-color: var(--upper-bg-darker);
+  border: none !important;
+  padding: 16px;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  border-bottom: 5px solid var(--upper-bg-darker);
+}
+
+#esse3old .tplHeader {
+  color: var(--main-fg);
+}
+
+#esse3old .tplLegenda .legenda1,
+#esse3old .tplLegenda .legenda2,
+#esse3old .tplLegenda .legenda3 {
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+#esse3old .tplLegenda .legenda1,
+#esse3old td.detail_table_middle.legenda1 {
+  background-color: var(--legenda1);
+  color: var(--main-fg);
+}
+
+#esse3old .tplLegenda .legenda2,
+#esse3old td.detail_table_middle.legenda2 {
+  background-color: var(--legenda2);
+  color: var(--main-fg);
+}
+
+#esse3old .tplLegenda .legenda3,
+#esse3old td.detail_table_middle.legenda3 {
+  background-color: var(--legenda3);
+  color: var(--main-fg);
+}
+
+#esse3old .tplTitolo {
+  background-color: var(--upper-bg-darker) !important;
+  color: var(--main-fg) !important;
+  border: none !important;
+  padding: 12px;
+}
+
+#esse3old th.detail_table {
+  background-color: var(--upper-bg);
+  color: var(--main-fg);
+}
+
+#esse3old .detail_table,
+#esse3old .detail_table_middle {
+  color: var(--main-fg);
+}
+
+.btn-default {
+  background-color: var(--upper-bg-darker) !important;
+  border-color: var(--upper-bg-darker) !important;
+  color: var(--main-fg) !important;
+}
+
+.btn-default:hover {
+  background-color: var(--upper-bg) !important;
+  border-color: var(--upper-bg) !important;
+  color: var(--main-fg) !important;
+}
+
+.footer {
+  background: var(--upper-bg) !important;
+}
+
+.footer_content, .footer_content p, .footer_content p a {
+  color: var(--main-fg) !important;
+}
+
+.footer_content p::after {
+  display: block;
+  opacity: 0.5;
+  content: "Esse3 Dark+ is activated. Please note that this is an unofficial extension and it is not affiliated with the University of Trento or CINECA. Esse3 logo is a trademark of CINECA.";
+}
+
+a:not(#main-navigation a) {
+  color: var(--main-fg) !important;
+}
+
+a:not(#main-navigation a):hover {
+  text-decoration: none !important;
+  color: var(--main-fg) !important;
+}
+
+input, button, select, .input-group-addon {
+  background: var(--upper-bg) !important;
+  border-color: var(--upper-bg-darker) !important;
+  color: var(--main-fg) !important;
+}
+
+input:focus, button:active, select:focus, .open button.dropdown-toggle {
+  box-shadow: none !important;
+  border-color: var(--unitn-red) !important;
+}
+
+.dropdown-menu {
+  background-color: var(--upper-bg-darker) !important;
+}
+
+.dropdown-menu li,
+.dropdown-menu li a {
+  color: var(--main-fg) !important;
+}
+
+.ui-widget-content {
+  background: var(--upper-bg-darker) !important;
+  color: var(--main-fg) !important;
+  border-color: var(--upper-bg) !important;
+  border-radius: var(--border-radius);
+  padding: 8px;
+}
+
+.ui-widget-header {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.ui-widget-header a .ui-icon {
+  filter: invert(1) brightness(1.5);
+}
+
+.ui-widget-content td a.ui-state-default {
+  background: var(--upper-bg-darker) !important;
+  border: 0;
+  color: var(--main-fg) !important;
+}
+
+.ui-widget-content td.ui-datepicker-current-day a.ui-state-default {
+  background: var(--unitn-red) !important;
+  border: 0;
+  color: var(--main-fg) !important;
+}
+
+.ui-widget-content td.ui-datepicker-today a.ui-state-default {
+  background: var(--upper-bg) !important;
+  border: 0;
+  color: var(--main-fg) !important;
+}
+
+.ui-widget-content td a.ui-state-default:hover {
+  background: var(--upper-bg) !important;
+  border: 0;
+  color: var(--main-fg) !important;
+}
+
+.ui-datepicker-buttonpane .ui-datepicker-current.ui-priority-secondary {
+  background: var(--upper-bg) !important;
+  border: 0;
+  padding: 8px 12px !important;
+  color: var(--main-fg) !important;
+  border-radius: var(--border-radius);
+}
+
+.ui-datepicker-buttonpane .ui-datepicker-close.ui-priority-primary {
+  background: var(--unitn-red) !important;
+  border: 0;
+  padding: 8px 12px !important;
+  color: var(--main-fg) !important;
+  border-radius: var(--border-radius);
+}
+
+.tplForm {
+  background-color: var(--upper-bg);
+  color: var(--main-fg) !important;
+}
+
+.tplForm input, .tplForm select {
+  background-color: var(--upper-bg-darker) !important;
+  color: var(--main-fg) !important;
+}
+
+table caption {
+  color: var(--main-fg);
+}
+
+.pagination > li > a {
+  background-color: var(--upper-bg-darker) !important;
+  border-color: #ffffff40 !important;
+}
+
+.pagination > li.active > a {
+  background-color: var(--unitn-red) !important;
+  border-color: #ffffff40 !important;
+  color: var(--main-fg) !important;
+}

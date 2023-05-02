@@ -1,0 +1,18 @@
+#esse3 .tirocini #tiro-Aziende-containerSearch form,
+#esse3 .tirocini #tiro-oppazi-closable_tags form,
+#esse3 .tirocini #tiro-oppazi-container_candidati > form {
+  background: var(--upper-bg) !important;
+  border: 0 !important;
+  border-radius: var(--border-radius);
+  padding: 16px;
+  border-bottom: 5px solid var(--upper-bg-darker);
+  box-shadow: 1px 1px 10px #00000080;
+}
+
+:is(#esse3 .tirocini #tiro-Aziende-containerSearch form,
+#esse3 .tirocini #tiro-oppazi-closable_tags form,
+#esse3 .tirocini #tiro-oppazi-container_candidati > form) :is(select, input) {
+  background: var(--upper-bg-darker) !important;
+  border: 1px solid #000000 !important;
+  color: var(--text-color) !important;
+}

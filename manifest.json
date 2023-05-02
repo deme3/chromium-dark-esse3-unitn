@@ -1,0 +1,88 @@
+{
+  "name": "Esse3 Dark+ Mode for UniTN",
+  "version": "1.0.0.0",
+  "manifest_version": 2,
+  "description": "A Chromium extension to inject dark mode into UniTrento's career management system (Esse3), specifically designed for UniTN branding and enhanced.",
+  "icons": {
+    "128": "icons/unitn128x128v2.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://esse3.unitn.it/*", "https://www.esse3.unitn.it/*"],
+      "css": [
+        "content-scripts/esse3-general.css",
+        "content-scripts/esse3-cookie.css"
+      ]
+    },
+    {
+      "matches": [
+        "https://esse3.unitn.it/Root.do*",
+        "https://www.esse3.unitn.it/Root.do*",
+        "https://esse3.unitn.it/Public.do*",
+        "https://www.esse3.unitn.it/Public.do*"
+      ],
+      "css": ["content-scripts/esse3-root.css"]
+    },
+    {
+      "matches": [
+        "https://esse3.unitn.it/Guide/ListaFacolta.do*",
+        "https://www.esse3.unitn.it/Guide/ListaFacolta.do*",
+        "https://esse3.unitn.it/auth/AddressBook/FotoForm.do*",
+        "https://www.esse3.unitn.it/auth/AddressBook/FotoForm.do*",
+        "https://esse3.unitn.it/Guide/PaginaRicercaCorsi.do*",
+        "https://www.esse3.unitn.it/Guide/PaginaRicercaCorsi.do*",
+        "https://esse3.unitn.it/auth/AddressBook/ABMsgAnaPreForm.do*",
+        "https://www.esse3.unitn.it/auth/AddressBook/ABMsgAnaPreForm.do*",
+        "https://www.esse3.unitn.it/auth/Enrollment/EMsgSceCdsPreForm.do*",
+        "https://esse3.unitn.it/auth/Enrollment/EMsgSceCdsPreForm.do*",
+        "https://www.esse3.unitn.it/auth/Enrollment/EPermSoggForm.do*",
+        "https://esse3.unitn.it/auth/Enrollment/EPermSoggForm.do*",
+        "https://www.esse3.unitn.it/auth/Enrollment/EPermSoggElencoForm.do*",
+        "https://esse3.unitn.it/auth/Enrollment/EPermSoggElencoForm.do*",
+        "https://www.esse3.unitn.it/auth/Enrollment/EScePdsPdsScelto.do*",
+        "https://esse3.unitn.it/auth/Enrollment/EScePdsPdsScelto.do*",
+        "https://www.esse3.unitn.it/Guide/PaginaRicercaInse.do*",
+        "https://esse3.unitn.it/Guide/PaginaRicercaInse.do*",
+        "https://www.esse3.unitn.it/Guide/PaginaRicercaDocenti.do*",
+        "https://esse3.unitn.it/Guide/PaginaRicercaDocenti.do*",
+        "https://www.esse3.unitn.it/Guide/PaginaListaAppelli.do*",
+        "https://esse3.unitn.it/Guide/PaginaListaAppelli.do*",
+        "https://www.esse3.unitn.it/auth/AddressBook/ABDicHandElencoForm.do*",
+        "https://esse3.unitn.it/auth/AddressBook/ABDicHandElencoForm.do*"
+      ],
+      "css": ["content-scripts/esse3-side-utilities.css"]
+    },
+    {
+      "matches": [
+        "https://www.esse3.unitn.it/auth/AddressBook/ABPrivacyPolicyConsensiForm.do*",
+        "https://esse3.unitn.it/auth/AddressBook/ABPrivacyPolicyConsensiForm.do*"
+      ],
+      "css": ["content-scripts/esse3-privacy.css"]
+    },
+    {
+      "matches": [
+        "https://www.esse3.unitn.it/auth/studente/Certificati/ListaCertificati.do*",
+        "https://esse3.unitn.it/auth/studente/Certificati/ListaCertificati.do*"
+      ],
+      "css": ["content-scripts/esse3-my-certificates.css"]
+    },
+    {
+      "matches": [
+        "https://www.esse3.unitn.it/auth/studente/tirocini/*",
+        "https://esse3.unitn.it/auth/studente/tirocini/*"
+      ],
+      "css": ["content-scripts/esse3-tirocini.css"]
+    },
+    {
+      "matches": [
+        "https://www.esse3.unitn.it/auth/studente/dirittoAlloStudio*",
+        "https://esse3.unitn.it/auth/studente/dirittoAlloStudio*"
+      ],
+      "css": ["content-scripts/esse3-mobility.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    "content-scripts/img/logo_unitn_it.png",
+    "content-scripts/img/logo_unitn_en.png"
+  ]
+}

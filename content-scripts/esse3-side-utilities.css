@@ -1,0 +1,69 @@
+#esse3 #glossary-list,
+#esse3 #utility-list,
+#esse3 #legend-list {
+  background-color: var(--upper-bg) !important;
+  border-bottom: 5px solid var(--upper-bg-darker) !important;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px #00000080;
+}
+
+#esse3 #glossary-list h2,
+#esse3 #utility-list h2,
+#esse3 #legend-list h2 {
+  border-bottom: 0 !important;
+  padding: 12px;
+}
+
+#esse3 #glossary-list h2::before,
+#esse3 #utility-list h2::before,
+#esse3 #legend-list h2::before {
+  color: var(--main-fg) !important;
+}
+
+#esse3 #utility-list ul li {
+  background-color: transparent !important;
+  padding: 0 !important;
+  font-size: 0;
+  line-height: 0;
+}
+
+#esse3 #utility-list ul li:nth-child(odd) {
+  background-color: var(--upper-bg-darker) !important;
+}
+
+#esse3 #utility-list ul li a {
+  display: block;
+  color: var(--main-fg) !important;
+  text-decoration: none;
+  padding: 12px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#esse3 #utility-list ul li:last-child a {
+  border-radius: 0 0 8px 8px;
+} 
+
+#esse3 #utility-list ul li a:hover {
+  background-color: var(--main-fg) !important;
+  color: var(--upper-bg) !important;
+}
+
+#esse3 #glossary-list dl dt,
+#esse3 #legend-list dl dt {
+  margin-bottom: 4px;
+}
+
+#esse3 #glossary-list dl dt,
+#esse3 #glossary-list dl dd,
+#esse3 #legend-list dl dt,
+#esse3 #legend-list dl dd {
+  color: var(--main-fg) !important;
+  padding: 0 12px !important;
+}
+
+#esse3 #glossary-list dl dd,
+#esse3 #legend-list dl dd {
+  border-bottom: 0 !important;
+  margin-bottom: 12px !important;
+}

@@ -1,0 +1,26 @@
+#cm {
+  background-color: var(--upper-bg) !important;
+  color: var(--main-fg) !important;
+}
+
+.cc_div .c-bn {
+  background-color: var(--upper-bg-darker) !important;
+  color: var(--main-fg) !important;
+}
+
+#cm.cloud .c-bn:first-child {
+  background-color: var(--unitn-red) !important;
+}
+
+#cm.cloud .c-bn:first-child:hover {
+  background-color: var(--unitn-red-darker) !important;
+}
+
+#cm .c_link:hover {
+  background-color: var(--main-fg) !important;
+  color: var(--upper-bg-darker) !important;
+}
+
+button#c-s-bn.c_close::after {
+  color: var(--main-fg) !important;
+}

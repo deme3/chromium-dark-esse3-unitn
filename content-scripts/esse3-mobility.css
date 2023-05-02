@@ -1,0 +1,48 @@
+#esse3 #containerAzione, #esse3 #containerAssocia {
+  background-color: var(--upper-bg) !important;
+  border: none !important;
+  border-radius: var(--border-radius);
+  border-bottom: 5px solid var(--upper-bg-darker);
+}
+
+#esse3 div[id^="ds-fieldsetSimulated-"] {
+  background-color: var(--upper-bg) !important;
+  border: none !important;
+  padding: 0;
+  border-radius: var(--border-radius);
+  border-bottom: 5px solid var(--upper-bg-darker);
+}
+
+#esse3 div[id^="ds-fieldsetSimulated-"] h3 {
+  color: var(--main-fg) !important;
+  background-color: transparent !important;
+  display: block !important;
+  position: static !important;
+  top: 0 !important;
+}
+
+
+#esse3 #containerAzione legend, #esse3 #containerAssocia legend {
+  position: relative;
+  color: var(--main-fg) !important;
+  top: 1em;
+  margin-bottom: 1em;
+}
+
+#esse3 #ds-containerInfoRiepCandidaturaBando {
+  margin-top: 0 !important;
+}
+
+#esse3 #ds-legendCheckCandidaturaBando dl dt :is(img[src*="ds/public.png"], img[src*="ds/private.png"]) {
+  filter: invert(1) brightness(1.5);
+}
+
+.form-control {
+  background-color: var(--upper-bg-darker) !important;
+  border: 1px solid #000000 !important;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+  border: 1px solid #000000 !important;
+  color: #ffffff90;
+}

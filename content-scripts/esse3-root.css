@@ -1,0 +1,123 @@
+/* Box bacheca centrale (home guest) */
+#esse3 div[id*="gu-public-header"] {
+  background-color: var(--upper-bg) !important;
+  margin: 2em 0;
+  padding: 16px !important;
+  border-radius: var(--border-radius);
+  border-bottom-color: var(--upper-bg-darker) !important;
+  box-shadow: 1px 1px 10px #00000050;
+}
+
+#esse3 div[id*="gu-public-header"] h2 {
+  background-color: transparent !important;
+  color: var(--main-fg) !important;
+  margin: 0 !important;
+}
+
+#esse3 div[id*="gu-public-header"] h2 a {
+  color: var(--main-fg) !important;
+}
+
+#esse3 div[id*="gu-public-header"] ul {
+  list-style-type: none;
+  padding: 0 !important;
+}
+
+#esse3 div[id*="gu-public-header"] ul li {
+  display: inline-block;
+  margin: 8px 4px !important;
+}
+
+#esse3 div[id*="gu-public-header"] ul li a {
+  background-color: var(--upper-bg-darker);
+  border-radius: 8px;
+  display: inline-block;
+  color: var(--main-fg);
+  padding: 8px 16px !important;
+  text-decoration: none;
+}
+
+#esse3 div[id*="gu-public-header"] ul li a:hover {
+  background-color: var(--main-bg);
+}
+/* End box bacheca centrale */
+
+/* Box avvisi destra */
+#gu-public-news-list h2, #gu-public-avvisi-list h2 {
+  background-image: none;
+}
+
+
+/*
+ * Login / Recupero password box
+ * [ pic ]
+ * [ empty rows x3 ]
+ *
+ * [class] selector is needed to override the specificity of the
+ * #gu-public-quattrocol-1 selector in esse3-general.css (workaround
+ * for Chrome)
+*/
+#gu-public-quattrocol-1[class] {
+  background: var(--upper-bg) !important;
+  margin: 2em 0 0 0;
+  padding: 16px !important;
+  border-radius: var(--border-radius);
+  border-bottom: 5px solid var(--upper-bg-darker);
+  box-shadow: 1px 1px 10px #00000050;
+}
+
+/* Roba inutilizzata che crea clutter */
+#gu-public-quattrocol-1 #lista_destinatari,
+#gu-public-quattrocol-1 #gu-public-quattrocol-1down {
+  display: none;
+}
+
+#gu-public-quattrocol-1 ul {
+  list-style-type: none;
+  background: var(--upper-bg-darker) !important;
+  border-radius: 8px;
+}
+
+#gu-public-quattrocol-1 ul li {
+  padding: 0 !important;
+  background-image: none !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+
+#gu-public-quattrocol-1 ul li:first-child a {
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+#gu-public-quattrocol-1 ul li:last-child a {
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+#gu-public-quattrocol-1 ul li a {
+  display: block;
+  color: var(--main-fg);
+  padding: 12px 16px;
+  font-size: 11pt;
+  line-height: initial;
+}
+
+#gu-public-quattrocol-1 ul li a:hover {
+  background: var(--main-fg) !important;
+  color: var(--upper-bg-darker) !important;
+}
+
+#gu-public-quattrocol-1 #gu-public-chisei {
+  width: 50px;
+  height: 50px;
+  min-height: 50px;
+  background-size: 50px;
+  background-position: 0 0;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+#gu-public-quattrocol-1 #gu-public-chisei h2 {
+  display: none;
+}
